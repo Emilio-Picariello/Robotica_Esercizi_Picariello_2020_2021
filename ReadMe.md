@@ -1,4 +1,4 @@
-#How to run
+# How to run
 Every excercise contains all needed packages to import in ros, just copy and past them inside a `[NAME_WS]/src`.
 
 In some exercises some packages are repeated with the same name, those are the exactly same one.
