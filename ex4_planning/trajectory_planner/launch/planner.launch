@@ -1,0 +1,13 @@
+<launch>
+
+    <arg name="debugger_attached" default="false" />
+
+    <param name="planning_group_name" value="fanuc"/>
+    <param name="trajectory_filename" value="yz_circular.traj"/>
+
+    <node pkg="trajectory_planner" type="trajectory_planner" name="trajectory_planner" output="screen" unless="$(arg debugger_attached)"/>
+
+    <node pkg="rqt_multiplot" type="rqt_multiplot" name="rqt_multiplot"/>
+
+
+</launch>
